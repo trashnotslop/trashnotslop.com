@@ -1,39 +1,19 @@
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
+  font-family: 'National Park';
   font-style: normal;
   font-display: swap;
-  font-weight: 400;
+  font-weight: 200 800;
   src:
     local(''),
-    url('/assets/fonts/atkinson/atkinson-hyperlegible-regular.woff2') format('woff2');
+    url('/assets/fonts/National_Park/NationalPark-VariableFont_wght.ttf') format('truetype-variations');
 }
 
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
-  font-style: italic;
-  font-display: swap;
-  font-weight: 400;
-  src:
-    local(''),
-    url('/assets/fonts/atkinson/atkinson-hyperlegible-italic.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Atkinson Hyperlegible';
+  font-family: 'Playfair Display';
   font-style: normal;
   font-display: swap;
-  font-weight: 700;
+  font-weight: 400 900;
   src:
     local(''),
-    url('/assets/fonts/atkinson/atkinson-hyperlegible-bold.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Redhat';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 900;
-  src:
-    local(''),
-    url('/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2') format('woff2');
+    url('/assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype-variations');
 }

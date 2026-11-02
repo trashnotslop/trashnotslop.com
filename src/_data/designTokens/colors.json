@@ -4,56 +4,60 @@
   "prefix": "color",
   "items": [
     {
+      "name": "Gray 000",
+      "value": "#f1f7f8"
+    },
+    {
       "name": "Gray 100",
-      "value": "#f8f8f8"
+      "value": "#e6eaec"
     },
     {
       "name": "Gray 200",
-      "value": "#e4e4e4"
+      "value": "#c6d5d9"
     },
     {
       "name": "Gray 300",
-      "value": "#aeaeae"
+      "value": "#a4bfc6"
     },
     {
       "name": "Gray 400",
-      "value": "#808080"
+      "value": "#88abb5"
     },
     {
       "name": "Gray 500",
-      "value": "#636363"
+      "value": "#76a0ac"
     },
     {
       "name": "Gray 600",
-      "value": "#484848"
+      "value": "#6b9aa8"
     },
     {
       "name": "Gray 700",
-      "value": "#3a3a3a"
+      "value": "#598693"
     },
     {
       "name": "Gray 800",
-      "value": "#2e2e2e"
+      "value": "#4c7783"
     },
     {
       "name": "Gray 900",
-      "value": "#161616"
+      "value": "#335c67"
     },
     {
       "name": "Pink",
-      "value": "#dd4462"
+      "value": "#e09f3e"
     },
     {
       "name": "Pink Subdued",
-      "value": "#ce5769"
+      "value": "#fff3b0"
     },
     {
       "name": "Blue",
-      "value": "#4467dd"
+      "value": "#9e2a2b"
     },
     {
       "name": "Blue Subdued",
-      "value": "#4d6cc8"
+      "value": "#540b0e"
     },
     {
       "name": "Gold",

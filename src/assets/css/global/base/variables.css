@@ -3,7 +3,7 @@
 /* Basic variable definitions for color schemes */
 :root {
   --gutter: var(--space-m-l);
-  --transition-duration: 250ms;
+  --transition-duration: 0;
   --transition-timing: ease;
   --wrapper-width: 85rem;
   --tracking: -0.04ch;

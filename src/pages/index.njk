@@ -8,38 +8,38 @@ blog:
 ---
 
 <div class="wrapper">
-  <header class="full | section spot-color-theme-primary">
-    <div class="section__inner flow region">
-      <h1 class="text-center text-theme-light">{{ title }}</h1>
-    </div>
-    {% svg "divider/waves", null, "divider" %}
-  </header>
+    <header class="full | section spot-color-theme-primary">
+        <div class="section__inner flow region">
+            <h1 class="text-center text-theme-light">{{ title }}</h1>
+        </div>
+    </header>
 
-  <article class="full | region">
-    <div class="prose wrapper flow">
-      <h2 id="trash-not-slop">Trash Not Slop</h2>
-      <p>
-        We believe that human written code is better than AI generated slop.
-      </p>
-      <p><em>This website is being made by humans, so be patient as it gets going.</em></p>
-    </div>
-  </article>
+    <article class="full | region">
+        <div class="prose wrapper flow">
+            <p>
+                We believe that human written code is better than AI generated slop.
+            </p>
+            <p>
+                <em>This website is being made by humans, so be patient as it gets going.</em>
+            </p>
+        </div>
+    </article>
 
-  <!--<section class="full | region">
-    <div class="prose wrapper flow">
-      <h2>{{ blog.title }}</h2>
-      {% if blog.intro %}
-        <p>{{ blog.intro }}</p>
-      {% endif %}
-      <div class="feature |  region region-space-l">
-        <custom-masonry layout="50-50">
-          {% set itemList = collections.allPosts %}
-					{% asyncEach item in itemList.slice(0, 4) %}
-            {% set headingLevel = "h3" %}
-						{% include "partials/card-blog.njk" %}
-					{% endeach %}
-        </custom-masonry>
-      </div>
-    </div>
-  </section>-->
+    <section class="full | region">
+        <div class="prose wrapper flow">
+            <h2>{{ blog.title }}</h2>
+            {% if blog.intro %}
+                <p>{{ blog.intro }}</p>
+            {% endif %}
+            <div class="feature |  region region-space-l">
+                <custom-masonry layout="50-50">
+                    {% set itemList = collections.allPosts %}
+                    {% asyncEach item in itemList.slice(0, 4) %}
+                        {% set headingLevel = "h3" %}
+                        {% include "partials/card-blog.njk" %}
+                    {% endeach %}
+                </custom-masonry>
+            </div>
+        </div>
+    </section>
 </div>
