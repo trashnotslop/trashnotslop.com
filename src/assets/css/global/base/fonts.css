@@ -1,39 +1,80 @@
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
+  font-family: 'Advercase';
   font-style: normal;
   font-display: swap;
-  font-weight: 400;
+  font-weight: normal;
   src:
     local(''),
-    url('/assets/fonts/atkinson/atkinson-hyperlegible-regular.woff2') format('woff2');
+    url('/assets/fonts/Advercase/Advercase-Font-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
+  font-family: 'Advercase';
+  font-style: normal;
+  font-display: swap;
+  font-weight: bold;
+  src:
+    local(''),
+    url('/assets/fonts/Advercase/Advercase-Font-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Advercase';
   font-style: italic;
   font-display: swap;
-  font-weight: 400;
+  font-weight: normal;
   src:
     local(''),
-    url('/assets/fonts/atkinson/atkinson-hyperlegible-italic.woff2') format('woff2');
+    url('/assets/fonts/Advercase/Advercase-Font-Italic.ttf');
 }
 
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
-  font-style: normal;
+  font-family: 'Advercase';
+  font-style: italic;
   font-display: swap;
-  font-weight: 700;
+  font-weight: bold;
   src:
     local(''),
-    url('/assets/fonts/atkinson/atkinson-hyperlegible-bold.woff2') format('woff2');
+    url('/assets/fonts/Advercase/Advercase-Font-BoldItalic.ttf');
 }
 
 @font-face {
-  font-family: 'Redhat';
+  font-family: 'Crimson Text';
   font-style: normal;
   font-display: swap;
-  font-weight: 900;
+  font-weight: normal;
   src:
     local(''),
-    url('/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2') format('woff2');
+    url('/assets/fonts/Crimson_Text/CrimsonText-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-display: swap;
+  font-weight: bold;
+  src:
+    local(''),
+    url('/assets/fonts/Crimson_Text/CrimsonText-Bold.ttf');
+}
+
+
+@font-face {
+  font-family: 'Closeout';
+  font-style: normal;
+  font-display: swap;
+  font-weight: normal;
+  src:
+    local(''),
+    url('/assets/fonts/Closeout_Standard/TAYCloseoutRegular.otf');
+}
+
+@font-face {
+  font-family: 'Road Runner';
+  font-style: normal;
+  font-display: swap;
+  font-weight: normal;
+  src:
+    local(''),
+    url('/assets/fonts/Road-Runner-Standard/TAYRoadRunnerRegular.otf');
 }

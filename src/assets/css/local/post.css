@@ -1,39 +1,73 @@
-.post article h1 {
-  font-size: var(--size-step-6);
+  p {
+    line-height: 1.4;
+    font-size: 1.5rem;
+    font-weight: 300;
+    
+    &:not(:last-child) {
+    margin-block-end: 2rem;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    margin-block: 1rem;
+    line-height: 1.2;
+    max-width: 75vw;
+  }
+
+  h2 {
+    font-family: var(--trash-font-title);
+    font-weight: 100;
+    color: var(--trash-color-brand-3);
+    font-size: 2rem;
+    margin-block: 1em 0.5em;
+  }
+
+  p.lead {
+    font-size: 1.5rem;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  blockquote {
+    border-left: 4px solid var(--trash-color-brand-3);
+    padding: 8px 16px;
+    
+    p {
+      font-size: 1.5rem;
+    }
+
+    small {
+      font-size: 1rem;
+      font-style: italic;
+      opacity: 0.5;
+    }
+
+    
+  }
+
+  picture {
+    max-width: calc(100% + 64px);
+    width: calc(100% + 64px);
+
+    margin: 32px -32px;
+    img {
+    border-radius: 16px;
+    }
+  }
+
+.draft {
+
+width: 100%;
+  padding: 8px 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--trash-color-brand-3);
+  color: var(--trash-color-light);
+  font-family: var(--trash-font-label);
+  line-height: 1;
 }
 
-.post article h2 {
-  font-size: var(--size-step-3);
-}
-
-.post article h3 {
-  font-size: var(--size-step-2);
-}
-
-/* make featured image alwyays 16/9 */
-.post h1 + :is(picture, figure) img {
-  max-inline-size: var(--max-img-width, 100%);
-  block-size: auto;
-  aspect-ratio: 16/9;
-  object-fit: cover;
-  object-position: center;
-}
-
-.post date {
-  font-size: var(--size-step-1);
-  color: var(--color-text-light);
-}
-
-.post .credit {
-  font-size: var(--size-step-min-1);
-  color: var(--color-text-accent);
-  background-color: var(--color-bg);
-  padding: var(--space-xs) var(--space-s);
-  border-radius: var(--border-radius-medium);
-  transform: translateY(-4ch) translateX(-0.5ch);
-  max-inline-size: fit-content;
-}
-
-.post .meta {
-  font-size: var(--size-step-min-1);
-}

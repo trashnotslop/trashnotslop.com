@@ -1,0 +1,18 @@
+---
+layout: page
+title: Quotes
+description: ""
+permalink: 'quotes/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
+---
+
+<div class="cluster">
+    <p>These are a few of my favourite quotes.</p>
+    {% for item in quotes %}
+        <blockquote>
+            <p>
+                {{ item.quote }}
+            </p>
+            <span>- <a href="{{ item.source }}">{{ item.person }}</a></span>
+        </blockquote>
+    {% endfor %}
+</div>

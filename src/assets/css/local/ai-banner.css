@@ -1,0 +1,48 @@
+.ai-banner {
+  --s: 130px; /* size of the image */
+  --d: 50s; /* animation duration */
+  --n: 4; /* number of visible images */
+
+  background-color: var(--trash-color-brand-1);
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  position: absolute;
+  width: calc(var(--n) * var(--s));
+  overflow: hidden;
+  transform: translate(-150px, 20px) rotate(-45deg);
+  text-decoration: none;
+  color: var(--trash-color-dark);
+  font-family: var(--trash-font-label);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    offset: shape(from calc(var(--s) / -2) 50%, hline by calc(sibling-count() * var(--s)));
+    animation: x var(--d) linear infinite calc(-1 * sibling-index() * var(--d) / sibling-count());
+    white-space: nowrap;
+    text-transform: uppercase;
+    padding-inline: 8px;
+    
+    span {
+      padding-top: 4px;
+      margin-right: 4px;
+      display: block;
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+  }
+}
+
+@keyframes x {
+  to {
+    offset-distance: 100%;
+  }
+}

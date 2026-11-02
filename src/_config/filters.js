@@ -6,6 +6,7 @@ import {sortAlphabetically} from './filters/sort-alphabetic.js';
 import {shuffleArray} from './filters/sort-random.js';
 import {splitlines} from './filters/splitlines.js';
 import {striptags} from './filters/striptags.js';
+import {relatedTo} from './filters/relatedTo.js';
 
 export default {
   toISOString,
@@ -16,5 +17,6 @@ export default {
   striptags,
   shuffleArray,
   sortAlphabetically,
-  slugifyString
+  slugifyString,
+  relatedTo
 };

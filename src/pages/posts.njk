@@ -1,0 +1,39 @@
+---
+layout: page
+title: Blog Posts
+description: 'All blog posts can be found here'
+pagination:
+  data: collections.allPosts
+  size: 8
+permalink: 'posts/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
+---
+
+<main class="page-posts">
+
+{% asyncEach item in pagination.items %}
+  {% set definedDate = item.date %}
+  <div class="post{% if item.data.draft %} post--draft{% endif %}">
+  <h2><a href="{{ item.url | url }}">{{ item.data.title }}</a></h2>
+  <span>{% include "partials/date.njk" %}</span>
+   {% if item.data.description %}
+    <div slot="content" webc:nokeep>{{ item.data.description | markdownFormat | safe }}</div>
+  {% endif %}
+  </div>
+{% endeach %}
+
+<!-- set collection to paginate -->
+{% set collectionToPaginate = collections.posts %}
+<!-- set target pagination settings in meta.js -->
+{% set metaKey = "blog" %}
+<!-- if the number of items in the collection is greater than the number of items shown on one page -->
+{% if collectionToPaginate.length > pagination.size %}
+  <!-- include pagination -->
+  {% include 'partials/pagination.njk' %}
+{% endif %}
+
+</main>
+
+
+{%- css "local" -%}
+  {%- include 'css/posts.css' -%}
+{%- endcss -%}

@@ -1,0 +1,9 @@
+<a class="ai-banner" href="/ai">
+    {% for i in range(0, 5) -%}
+    <div class="item"><span>AI free zone</span>{% svg "icons/robot-off" %}</div>
+    {% endfor %}
+</a>
+
+{% css "local" %}
+  {% include "css/ai-banner.css" %}
+{% endcss %}

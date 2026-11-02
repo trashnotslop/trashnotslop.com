@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h1>{{ title }}</h1>
+
+<article class="prose">
+  {{ content | safe }}
+</article>
+
+{%- css "local" -%}
+  {%- include 'css/post.css' -%}
+  {%- include 'css/footnotes.css' -%}
+{%- endcss -%}

@@ -153,5 +153,5 @@ html:has(dialog[open]:modal) {
 }
 
 @view-transition {
-  navigation: auto;
+  navigation: none;
 }

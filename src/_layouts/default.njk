@@ -1,0 +1,10 @@
+---
+layout: base
+---
+{% include "partials/header.njk" %}
+<main>
+  {{ content | safe }}
+</main>
+{%- css "local" -%}
+  {%- include 'css/default.css' -%}
+{%- endcss -%}

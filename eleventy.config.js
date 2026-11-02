@@ -87,9 +87,11 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('shuffle', filters.shuffleArray);
   eleventyConfig.addFilter('alphabetic', filters.sortAlphabetically);
   eleventyConfig.addFilter('slugify', filters.slugifyString);
+  eleventyConfig.addFilter('relatedTo', filters.relatedTo);
 
   // --------------------- Shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svgPositionalShortcode);
+  eleventyConfig.addShortcode('explodedText', shortcodes.explodedText);
   eleventyConfig.addShortcode('svgKeys', shortcodes.svgKeysShortcode);
   eleventyConfig.addShortcode('image', shortcodes.imagePositionalShortcode);
   eleventyConfig.addShortcode('imageKeys', shortcodes.imageKeysShortcode);

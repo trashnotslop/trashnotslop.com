@@ -1,9 +1,10 @@
 ---
-fontDisplay: "'Red Hat Display', Ubuntu" # needed created in local development, font must be installed on your system.
-fontBody: "'Atkinson Hyperlegible', Ubuntu" # needed created in local development, font must be installed on your system.
-background: '#FBBE25'
-text: '#161616'
-siteUrl: 'eleventy-excellent.netlify.app'
+fontDisplay: "'Advercase', Ubuntu" # needed created in local development, font must be installed on your system.
+fontBody: "'Crimson Text', Ubuntu" # needed created in local development, font must be installed on your system.
+background: '#FCBF49'
+textBody: '#003049'
+textDisplay: '#D62828'
+siteUrl: 'trashnotslop.com'
 pagination:
   data: collections.allPosts
   size: 1
@@ -35,21 +36,17 @@ eleventyExcludeFromCollections: true
   {% endif %}
 
   <rect id="bg" width="100%" height="100%" opacity="1" fill="{{ background }}" />
-  <!-- star -->
-  <g width="1096" height="1056" viewBox="0 0 1096 1056" fill="none" transform="translate(0, -150)">
-    <path d="M235.048 2.31017L565.808 192.455L910.285 28.026L831.43 401.258L1094.33 677.671L714.848 718.199L533.127 1053.8L377.382 705.568L2.18875 636.646L285.207 380.519L235.048 2.31017Z" stroke="{{ text }}" stroke-opacity="0.1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
 
   <!-- date -->
   <text
     font-family="{{ fontBody }}, sans-serif"
     font-size="22"
     font-weight="500"
-    fill="{{ text }}"
+    fill="{{ textBody }}"
     letter-spacing="-1"
   >
     <tspan x="160" y="{{ verticalStartingPoint - 120 }}">
-      {{ post.date | formatDate('DD / MM / YYYY') }}
+      {{ post.date | formatDate('MMMM D, YYYY') }}
     </tspan>
   </text>
 
@@ -57,10 +54,9 @@ eleventyExcludeFromCollections: true
   <text
     id="text"
     font-family="{{ fontDisplay }}, sans-serif"
-    font-size="80"
-    font-weight="900"
-    fill="{{ text }}"
-    letter-spacing="-3"
+    font-size="64"
+    font-weight="400"
+    fill="{{ textDisplay }}"
   >
     {% for line in titleInLines %}
       <tspan x="160" y="{{ verticalStartingPoint - 20 + loop.index0 * 85 }}"> {{ line }} </tspan>
@@ -72,7 +68,7 @@ eleventyExcludeFromCollections: true
     font-family="{{ fontBody }}, sans-serif"
     font-size="22"
     font-weight="500"
-    fill="{{ text }}"
+    fill="{{ textBody }}"
     letter-spacing="-0.5"
   >
     <tspan x="160" y="580">{{ siteUrl }}</tspan>
@@ -84,7 +80,7 @@ eleventyExcludeFromCollections: true
     font-family="{{ fontDisplay }}, sans-serif"
     font-size="18"
     font-weight="950"
-    fill="{{ text }}"
+    fill="{{ textDisplay }}"
     letter-spacing="-0.5"
   >
     <tspan x="950" y="580">{{ meta.siteName | upper }}</tspan>

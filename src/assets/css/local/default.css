@@ -1,0 +1,20 @@
+body {
+    h1 {
+        color: var(--trash-color-brand-3);
+        font-family: var(--trash-font-title);
+        font-size: 6rem;
+        font-weight: normal;
+    }
+
+    main {
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+
+        article {
+            max-width: 80ch;
+        }
+    }
+}

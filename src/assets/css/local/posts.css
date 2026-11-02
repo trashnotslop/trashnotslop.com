@@ -1,0 +1,44 @@
+.page-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 32px;
+    align-items: center;
+    width: 100vw;
+
+    h1 {
+        color: var(--trash-color-brand-3);
+        font-family: var(--trash-font-title);
+        font-size: 64px;
+        font-weight: normal;
+    }
+
+}
+
+
+.post {
+    width: 100%;
+    max-width: 80ch;
+
+    h2 {
+        color: var(--trash-color-brand-4);
+        font-family: var(--trash-font-title);
+        font-size: 32px;
+        font-weight: normal;
+        text-align: left;
+        
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &.post--draft {
+        h2 {
+            opacity: 0.5;
+        }
+    }
+}

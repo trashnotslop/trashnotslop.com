@@ -4,7 +4,8 @@
   "singleQuote": true,
   "bracketSpacing": false,
   "quoteProps": "consistent",
-  "trailingComma": "none",
+  "trailingComma": "all",
+  "semi": true,
   "arrowParens": "avoid",
   "plugins": ["prettier-plugin-jinja-template"],
   "overrides": [

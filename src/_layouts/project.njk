@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<h1>{{ title }}</h1>
+
+{{ content | safe }}
+
+<section class="related-posts">
+    {% set itemList = collections.allPosts | relatedTo(project) %}
+    <h3>Related blog posts</h3>
+    {% asyncEach item in itemList.slice(0, 3) %}
+        <h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
+    {% endeach %}
+</section>
