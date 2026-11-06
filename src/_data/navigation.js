@@ -1,6 +1,24 @@
 export default {
   top: [
     {
+      text: 'Posts',
+      url: '/posts/'
+    },
+    {
+      text: 'Videos',
+      url: '/videos/'
+    },
+    {
+      text: 'Projects',
+      url: '/projects/'
+    },
+    {
+      text: 'Livestream',
+      url: '/livestream/'
+    }
+  ],
+  bottom: [
+    {
       text: 'About',
       url: '/about/'
     },
@@ -8,11 +26,6 @@ export default {
       text: 'Built with',
       url: '/built-with/'
     },
-    {
-      text: 'Blog',
-      url: '/blog/'
-    }
-  ],
-  bottom: [
+
   ]
 };
